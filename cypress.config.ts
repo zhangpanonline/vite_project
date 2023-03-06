@@ -96,7 +96,7 @@ export default defineConfig({
     // A String or Array of glob patterns of the test files to load.
       // *： 匹配单路径下的 0 个或 多个 字符串
       // **：和*一样，可以匹配路径中的 0个 或 多个，而且**可以匹配当前目录和子目录
-    specPattern: 'cypress/e2e/**/*.{cy,spec}.{js,jsx,ts,tsx}',
+    specPattern: 'src/**/*.spec.{js,ts,jsx,tsx}',
     // 	A String or Array of glob patterns used to ignore test files that would otherwise be shown in your list of tests. Please read the notes on using this.
     excludeSpecPattern: '*.hot-update.js',
     // 	Enables the "Run All Specs" UI feature, allowing the execution of multiple specs sequentially.
@@ -122,7 +122,7 @@ export default defineConfig({
     supportFile: 'cypress/support/component.ts', // default: 'cypress/support/component.js'
     // A glob pattern String or Array of glob pattern Strings of the spec files to load.
     // !!! Note that any files found matching the e2e.specPattern value will be automatically excluded.
-    specPattern: 'src/**/*.{cy,spec}.{js,ts,jsx,tsx}',
+    specPattern: 'src/**/*.cy.{js,ts,jsx,tsx}',
     // A String or Array of glob patterns used to ignore spec files that would otherwise be shown in your list of specs. Please read the notes on using this.
     excludeSpecPattern: ['/snapshots/*', '/image_snapshots/*'],
     // Run all specs in a single tab, instead of creating a new tab per spec. This can improve run mode performance, but can impact spec isolation and reliability on large test suites. 

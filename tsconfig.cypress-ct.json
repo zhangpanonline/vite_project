@@ -4,9 +4,10 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
+    "src/**/*.spect.ts",
     "cypress/support/component.*",
     "cypress/support/commands.ts"
-, "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts"  ],
+, "cypress/e2e/example.spec.ts"],
   "exclude": [],
   "compilerOptions": {
     "composite": true
