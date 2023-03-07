@@ -8,17 +8,17 @@
         系统登录
       </h1>
       <el-form-item prop="username" >
-        <el-input v-model="loginForm.username" prefix-icon="User"></el-input>
+        <el-input data-cy="username" v-model="loginForm.username" prefix-icon="User"></el-input>
       </el-form-item>
       <el-form-item prop="password" >
-        <el-input v-model="loginForm.password" :type="passwordType">
+        <el-input data-cy="password" v-model="loginForm.password" :type="passwordType">
           <template #prefix >
             <el-icon v-if="passwordType === 'password'" @click="passwordType = ''"  ><Lock /></el-icon>
             <el-icon v-else  @click="passwordType = 'password'"><Unlock /></el-icon>
           </template>
         </el-input>
       </el-form-item>
-      <el-button :loading="loading" type="primary" @click="handleLogin()" style="width: 100%; height: 40px;" >登录</el-button>
+      <el-button :loading="loading" data-cy="login" type="primary" @click="handleLogin()" style="width: 100%; height: 40px;" >登录</el-button>
     </el-form>
   </div>
 </template>
