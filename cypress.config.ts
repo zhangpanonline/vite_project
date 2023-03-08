@@ -96,7 +96,7 @@ export default defineConfig({
     // A String or Array of glob patterns of the test files to load.
       // *： 匹配单路径下的 0 个或 多个 字符串
       // **：和*一样，可以匹配路径中的 0个 或 多个，而且**可以匹配当前目录和子目录
-    specPattern: 'src/**/*.spec.{js,ts,jsx,tsx}',
+    specPattern: 'cypress/e2e/**/*.{spec,cy}.{js,ts,jsx,tsx}',
     // 	A String or Array of glob patterns used to ignore test files that would otherwise be shown in your list of tests. Please read the notes on using this.
     excludeSpecPattern: '*.hot-update.js',
     // 	Enables the "Run All Specs" UI feature, allowing the execution of multiple specs sequentially.

@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts", "cypress/e2e/example.spec.ts", "cypress/e2e/login.spec.ts", "cypress/e2e/login.spec.ts"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
