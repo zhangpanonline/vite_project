@@ -14,6 +14,16 @@ const router = createRouter({
           path: '/home',
           name: 'home',
           component: home
+        },
+        {
+          path: '/clipboard',
+          name: 'clipboard',
+          component: () => import('@/views/clipboard/Index.vue')
+        },
+        {
+          path: '/demo',
+          name: 'demo',
+          component: () => import('@/views/demo.vue')
         }
       ]
     },
